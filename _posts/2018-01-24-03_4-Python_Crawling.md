@@ -192,7 +192,7 @@ absolutepath는 이 경로를 절대경로로 바꿔줘요.
 
 
 ### Refactor Rename을 저는 f2로 해놔요.
-
+                                                                                                                             
 
 ### .gitignore Custom
 /data
@@ -210,3 +210,4 @@ A == True 는 안됨.
 == 는 값을 비교하고
 
 is 는 아이디 값을 비교 (메모리에 있는 객체 자체를 비교, 완전히 같은 객체여야만 함.)
+v

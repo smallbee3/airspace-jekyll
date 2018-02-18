@@ -1,4 +1,4 @@
-# 07 Djangogirl Tutorial
+# 01-30-07-Djangogirl-Tutorial
 
 ---
 
@@ -126,33 +126,22 @@ truncatechar은 한 글자 단위로 짜르기 때문에 자연스럽지 않음.
 
 
 장고걸스에서는 로드 css를 동적으로 함.
-
 우리가 스태틱으로 가져오면 되겠다.
 
 우리 스태틱은 쓰지 맙시다.
-
-ddd로 쓰자.
-
-그러면 html모든 부분을 전부다 바꿔야되니까.
-
-동정ㄱ으로 
-
-
+ddd로 쓰자. -> 그러면 html모든 부분을 전부다 바꿔야되니까.
+동적으로
 
 ---------------
 
 100에 해당하는 쿼리를 남겼을때 데이터베이스에 그 내용이 없다.
 
-
 주석까지 렌더링해버리끼 때문에 html 주석을 달면 안됨.
 -> 장고 렌더링 주석으로 달아야함.
-
-
 
 --------------------
 
 프로버전만 템플릿 주석처리가 먹힘.
-
 
 URL: /post/3/
 
@@ -176,9 +165,6 @@ URL:      localhost:8000/list
 view function: post_detail(request, pk)
 
 
-
-
-
 URL:      localhost:8000/post/3/
 Path:     post/<int:pk>/
 URL name: post-detail
@@ -194,7 +180,6 @@ URL name: post-detail
           kwargs: {pk: <int value>}
 Path:     post/<int:pk>/
 URL:      localhost:8000/post/<int value>/
-
 
 
 장고에서 정적파일을 다루는 것은 조금 다름.
@@ -249,7 +234,7 @@ View
 
 
 
-{#        템플릿 태그에서는 없는 것을 참조한다고 에러가 나지 않아요. #}
+* {#        템플릿 태그에서는 없는 것을 참조한다고 에러가 나지 않아요. #}
 
 
 ### Django 내부에는 UTC 시간이 저장됨.
@@ -270,9 +255,12 @@ request 객체를 첫번째 인수로 받고, template 이름을 두번째 인�
 ### migration에 대해서 말이 많음.
 
 디비에 민감하면 장고를 쓰지도 않음.
-시니어분들.
+시니어분들.asdkjlsj
 
 
+
+### ./manage.py showmigrations
+migration 내역을 볼 수 있음.
 
 
 
@@ -355,14 +343,11 @@ len(q2.choice_set.all()) 이렇게 쓰지마세요.
 - Get방식으로 
 
 
-> 
 * 기사 한개가 있으면 기사 한개에서만 쓰는게 아니라 여러 사이트에 출력이 된다.
 
 
 스타트업이면 어지간한것은 다  해결이 되고.
 
-forloop.counter
-템플릿 언어에서만 쓰는 특수
 
 
 네임이 같아요.
@@ -385,7 +370,7 @@ post로 하면 url이 포함안되고 보내지고 끝
 
 
 ----- 
-   # foreign key에는 무조건 _id 가 들어감
+
 
 -----
 
